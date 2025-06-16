@@ -2,17 +2,34 @@
 
 This project is a gesture recognition system that processes and recognizes gestures to perform specific actions. It consists of several components that work together to achieve this functionality.
 
-## Project Structure
+# AI Hand Gesture Control System
 
-```
-gesture_control/
-├── main.py                 # Main file to run the system
-├── utils.py                # Utility functions for gestures
-├── gesture_map.py          # Gesture logic mapping
-├── screenshots/            # Folder where screenshots are saved
-└── logs/
-    └── gesture_log.csv     # Action logs
-```
+This project uses computer vision and hand gesture recognition to control common computer tasks using a webcam. Built with Python, OpenCV, and MediaPipe, it supports gestures for copy, cut, paste, select, screenshots, and even launching apps.
+
+## 🔧 Tech Stack
+- Python
+- OpenCV
+- MediaPipe
+- PyAutoGUI
+- Keyboard
+- GitHub
+
+## 🎯 Features
+| Gesture             | Action             |
+|---------------------|--------------------|
+| ✊ All fingers closed | Take Screenshot    |
+| ☝️ Index only        | Select / Click     |
+| ✌️ Index + Middle    | Copy               |
+| 🤞 Index + Mid + Ring| Cut                |
+| 🤟 Thumb + Index + Pinky | Paste        |
+| ✋ Swipe Up/Down     | Scroll PDF         |
+| 👉 Swipe Right       | Launch Calculator  |
+| 👈 Swipe Left        | Launch Notepad     |
+
+## ▶️ Run This Project
+
+pip install -r requirements.txt
+python main.py
 
 ## Files Description
 
@@ -52,10 +69,12 @@ python main.py
 
 Ensure that your camera is accessible and properly configured to capture gestures.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+If you'd like, I can:
+- Write your full `README.md` and push it for you
+- Generate sample screenshots for uploading
+- Help with adding a license or GitHub topics/tags
+
+Would you like help with any of these?
